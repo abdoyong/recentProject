@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Speed & Trajectory Analysis - Group B Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-main">
+                    <h1 class="header-title">🚗 Vehicle Speed & Trajectory Analysis</h1>
+                    <div class="header-subtitle">Group B | TTENG564 Course Project</div>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-badge">
+                        <span class="stat-icon">📊</span>
+                        <span class="stat-text">Week 2 of 9</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-section="home">
+                    <span class="nav-icon">🏠</span>
+                    <span>Home</span>
+                </button>
+                <button class="nav-btn" data-section="proposal">
+                    <span class="nav-icon">📋</span>
+                    <span>Proposal</span>
+                </button>
+                <button class="nav-btn" data-section="progress">
+                    <span class="nav-icon">📈</span>
+                    <span>Progress</span>
+                </button>
+                <button class="nav-btn" data-section="files">
+                    <span class="nav-icon">📁</span>
+                    <span>Files & Code</span>
+                </button>
+                <button class="nav-btn" data-section="reports">
+                    <span class="nav-icon">📄</span>
+                    <span>Reports</span>
+                </button>
+                <button class="nav-btn" data-section="presentations">
+                    <span class="nav-icon">🎯</span>
+                    <span>Presentations</span>
+                </button>
+                <button class="nav-btn" data-section="team">
+                    <span class="nav-icon">👥</span>
+                    <span>Team</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="home" class="section active">
+            <div class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Welcome to the Project Management Hub</h2>
+                        <p class="hero-subtitle">Analyzing Vehicle Speed and Trajectories using Computer Vision</p>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🤖</span>
+                                <span>Computer Vision</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⚡</span>
+                                <span>Real-time Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="dashboard-grid">
+                    <div class="card dashboard-card current-status">
+                        <div class="card__body">
+                            <div class="card-header">
+                                <h3>Current Status</h3>
+                                <span class="status-indicator active"></span>
+                            </div>
+                            <div class="current-week">
+                                <div class="week-indicator">Week 2</div>
+                                <div class="week-title">Project Setup & Proposal Presentation</div>
+                                <div class="week-date">Due Date: October 7, 2025</div>
+                                <div class="progress-ring">
+                                    <div class="ring-text">In Progress</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card dashboard-card progress-overview">
+                        <div class="card__body">
+                            <div class="card-header">
+                                <h3>Progress Overview</h3>
+                                <span class="progress-percentage">15%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill animated" style="width: 15%"></div>
+                                </div>
+                                <div class="progress-text">Week 2 of 9 (15% Complete)</div>
+                            </div>
+                            <div class="milestone-preview">
+                                <span class="milestone-label">Next Milestone:</span>
+                                <span class="milestone-name">Core Code - Data Extraction</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card dashboard-card quick-stats">
+                        <div class="card__body">
+                            <h3>Quick Stats</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item completed">
+                                    <div class="stat-value">1</div>
+                                    <div class="stat-label">Weeks Completed</div>
+                                    <div class="stat-icon">✅</div>
+                                </div>
+                                <div class="stat-item pending">
+                                    <div class="stat-value">8</div>
+                                    <div class="stat-label">Weeks Remaining</div>
+                                    <div class="stat-icon">⏳</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card dashboard-card next-milestone">
+                        <div class="card__body">
+                            <div class="card-header">
+                                <h3>Next Milestone</h3>
+                                <span class="urgency-badge medium">Medium Urgency</span>
+                            </div>
+                            <div class="milestone">
+                                <div class="milestone-title">Core Code - Data Extraction</div>
+                                <div class="milestone-date">October 14, 2025</div>
+                                <div class="milestone-desc">Modify the core script to log vehicle detections.</div>
+                                <div class="milestone-actions">
+                                    <button class="btn btn--sm btn--primary">Start Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-overview">
+                    <div class="card enhanced-overview">
+                        <div class="card__body">
+                            <div class="overview-header">
+                                <h3>Project Overview</h3>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">OpenCV</span>
+                                    <span class="tech-badge">YOLO</span>
+                                </div>
+                            </div>
+                            <p>Our project focuses on developing a computer vision system to analyze vehicle speeds and
+                                trajectory patterns from traffic video footage. This innovative approach provides a
+                                cost-effective and non-intrusive solution for traffic management and road safety
+                                assessment.</p>
+
+                            <div class="technologies-grid">
+                                <div class="tech-category">
+                                    <h4>🤖 Computer Vision</h4>
+                                    <ul>
+                                        <li>OpenCV for Processing</li>
+                                        <li>YOLO for Detection</li>
+                                        <li>Multi-Object Tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>📊 Data Analysis</h4>
+                                    <ul>
+                                        <li>Pandas for Data Manipulation</li>
+                                        <li>NumPy for Calculations</li>
+                                        <li>Matplotlib for Visualizations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proposal" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project Proposal</h2>
+                    <div class="proposal-actions">
+                        <a href="https://udksa-my.sharepoint.com/:b:/g/personal/2210009122_iau_edu_sa/EfZnAhQyUJhNi_k71oFilhIBj63yzAp6TddztnS6yyYCKQ?e=G6Pz0ns"
+                            target="_blank" class="btn btn--primary">
+                            <span>↗️</span>
+                            View Proposal PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="proposal-content">
+                    <div class="card proposal-section">
+                        <div class="card__body">
+                            <div class="section-number">I</div>
+                            <h3>Project Title</h3>
+                            <div class="project-title-showcase">
+                                <h4>Vehicle Speed and Trajectory Analysis using Computer Vision</h4>
+                                <p>A comprehensive system to analyze traffic patterns through advanced computer vision
+                                    techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card proposal-section">
+                        <div class="card__body">
+                            <div class="section-number">II</div>
+                            <h3>Problem Statement</h3>
+                            <div class="problem-statement">
+                                <p>Accurate measurement of vehicle speeds and analysis of lane usage patterns are
+                                    crucial for traffic management, road safety assessment, and transportation planning.
+                                    Traditional methods using radar guns or loop sensors are costly, require physical
+                                    installation, and offer limited coverage.</p>
+
+                                <div class="challenges-grid">
+                                    <div class="challenge-item">
+                                        <span class="challenge-icon">💰</span>
+                                        <span>High Cost of Traditional Methods</span>
+                                    </div>
+                                    <div class="challenge-item">
+                                        <span class="challenge-icon">🚧</span>
+                                        <span>Need for Physical Installation</span>
+                                    </div>
+                                    <div class="challenge-item">
+                                        <span class="challenge-icon">📍</span>
+                                        <span>Limited Coverage Area</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card proposal-section">
+                        <div class="card__body">
+                            <div class="section-number">III</div>
+                            <h3>Proposed Solution & Methodology</h3>
+                            <p>Our solution leverages computer vision techniques to analyze traffic video footage and
+                                extract vehicle speed and lane usage information.</p>
+
+                            <div class="methodology-steps">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Object Detection</h4>
+                                        <p>Using pre-trained models (YOLO) to identify vehicles in each frame.</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Multi-Object Tracking (MOT)</h4>
+                                        <p>Tracking individual vehicles across different frames.</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Speed Estimation</h4>
+                                        <p>Conversion from pixel coordinates to real-world coordinates and temporal
+                                            analysis.</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Lane Detection & Identification</h4>
+                                        <p>Perspective transformation and geometric analysis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card proposal-section">
+                        <div class="card__body">
+                            <div class="section-number">IV</div>
+                            <h3>Deliverables & Evaluation</h3>
+                            <div class="deliverables-showcase">
+                                <div class="deliverable-category">
+                                    <h4>🐍 Code & Scripts</h4>
+                                    <ul>
+                                        <li>Python scripts for vehicle detection and tracking.</li>
+                                        <li>Speed estimation algorithm with accuracy verification.</li>
+                                        <li>Lane usage analysis system.</li>
+                                    </ul>
+                                </div>
+                                <div class="deliverable-category">
+                                    <h4>📊 Data & Analysis</h4>
+                                    <ul>
+                                        <li>Comprehensive dataset of vehicle speeds and lane identifications.</li>
+                                        <li>Statistical analysis with visual charts.</li>
+                                        <li>Data and results visualization.</li>
+                                    </ul>
+                                </div>
+                                <div class="deliverable-category">
+                                    <h4>📄 Documentation & Presentations</h4>
+                                    <ul>
+                                        <li>Formal technical report documenting methodology and results.</li>
+                                        <li>Final presentation summarizing project outcomes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Progress Tracking</h2>
+                    <div class="progress-summary">
+                        <span class="summary-item">
+                            <span class="summary-value">2</span>
+                            <span class="summary-label">Current Week</span>
+                        </span>
+                        <span class="summary-divider">|</span>
+                        <span class="summary-item">
+                            <span class="summary-value">15%</span>
+                            <span class="summary-label">Completed</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-header">
+                        <h3>Project Timeline</h3>
+                        <div class="timeline-legend">
+                            <span class="legend-item complete">
+                                <span class="legend-dot"></span>
+                                Completed
+                            </span>
+                            <span class="legend-item current">
+                                <span class="legend-dot"></span>
+                                In Progress
+                            </span>
+                            <span class="legend-item pending">
+                                <span class="legend-dot"></span>
+                                Upcoming
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline enhanced-timeline" id="timeline">
+                    </div>
+                </div>
+
+                <div class="upload-section enhanced-upload">
+                    <h3>Project File Access</h3>
+                    <div class="upload-area enhanced text-center" id="generalUploadArea">
+                        <div class="placeholder-content p-20">
+                            <div class="placeholder-icon">🔒</div>
+                            <h3>File Access is Managed Internally</h3>
+                            <p>All project files, code, and outputs will be accessed directly through the **Files &
+                                Code** section once they become available in the timeline.</p>
+                        </div>
+                    </div>
+                    <div id="uploadedFiles" class="uploaded-files enhanced-file-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="files" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>File & Code Management</h2>
+                </div>
+
+                <div class="file-manager">
+                    <div class="file-sidebar">
+                        <div class="sidebar-header">
+                            <h3>File Explorer</h3>
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="tree">🌳</button>
+                                <button class="view-btn" data-view="list">📋</button>
+                            </div>
+                        </div>
+
+                        <div class="file-search">
+                            <input type="text" placeholder="Search files..." id="fileSearch" class="form-control"
+                                disabled>
+                        </div>
+
+                        <div class="file-tree" id="fileTree">
+                            <div class="placeholder-content p-20 text-center">
+                                <div class="placeholder-icon">⏳</div>
+                                <h3>File Access Coming Soon</h3>
+                                <p>Project files and code will be available here starting from **Week 3** (October 14,
+                                    2025).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="file-content">
+                        <div class="viewer-placeholder">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">💻</div>
+                                <h3>File Viewer Disabled</h3>
+                                <p>Viewing and editing files will be available in a future update. For now, check the
+                                    file list in the sidebar once content is released.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reports" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Reports and Documentation</h2>
+                </div>
+
+                <div class="reports-dashboard">
+                    <div class="card report-stats">
+                        <div class="card__body">
+                            <h3>Report Statistics</h3>
+                            <div class="report-metrics">
+                                <div class="metric-item">
+                                    <div class="metric-value">0</div>
+                                    <div class="metric-label">Completed Reports</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-value">1</div>
+                                    <div class="metric-label">In Draft</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-value">7</div>
+                                    <div class="metric-label">Scheduled</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reports-grid enhanced-reports">
+                    <div class="card report-drafts">
+                        <div class="card__body">
+                            <h3>Report Drafts</h3>
+                            <div class="report-list">
+                                <div class="report-item enhanced">
+                                    <div class="report-icon">📄</div>
+                                    <div class="report-info">
+                                        <div class="report-title">Technical Report Draft</div>
+                                        <div class="report-date">Due: November 11, 2025</div>
+                                        <div class="report-progress">
+                                            <div class="progress-bar small">
+                                                <div class="progress-fill" style="width: 25%"></div>
+                                            </div>
+                                            <span class="progress-text">25% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="report-actions">
+                                        <div class="status status--warning">In Draft</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-center mt-16 text-muted">Technical report access will be available in **Week
+                                7**.</p>
+                            <button class="btn btn--primary btn--full-width" disabled>Access Report (Coming Week
+                                7)</button>
+                        </div>
+                    </div>
+
+                    <div class="card progress-reports">
+                        <div class="card__body">
+                            <h3>Weekly Progress Reports</h3>
+                            <p class="text-center text-muted mb-0">Progress Reports access will be available starting
+                                from **Week 4**.</p>
+                            <div class="placeholder-content p-20 text-center">
+                                <div class="placeholder-icon">📊</div>
+                                <p>Weekly report files will be listed here after submission.</p>
+                            </div>
+                            <button class="btn btn--primary btn--full-width" disabled>Create Progress Report (Coming
+                                Week 4)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-template enhanced-template">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Report Template Structure</h3>
+                            <div class="template-sections">
+                                <div class="template-section">
+                                    <span class="section-number">1</span>
+                                    <span class="section-title">Introduction</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">2</span>
+                                    <span class="section-title">Literature Review</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">3</span>
+                                    <span class="section-title">Methodology</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">4</span>
+                                    <span class="section-title">Implementation</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">5</span>
+                                    <span class="section-title">Results and Analysis</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">6</span>
+                                    <span class="section-title">Discussion</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">7</span>
+                                    <span class="section-title">Conclusion</span>
+                                </div>
+                                <div class="template-section">
+                                    <span class="section-number">8</span>
+                                    <span class="section-title">References</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="presentations" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Presentations</h2>
+                </div>
+
+                <div class="presentations-grid enhanced-presentations">
+                    <div class="card presentation-card proposal">
+                        <div class="card__body">
+                            <div class="presentation-header">
+                                <div class="presentation-icon">📋</div>
+                                <h3>Proposal Presentation</h3>
+                                <div class="presentation-badge current">Current</div>
+                            </div>
+                            <div class="presentation-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Due Date:</span>
+                                    <span class="detail-value">October 7, 2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Required Duration:</span>
+                                    <span class="detail-value">5 Minutes</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Status:</span>
+                                    <div class="status status--info">In Preparation</div>
+                                </div>
+                            </div>
+
+                            <div class="presentation-actions">
+                                <a href="https://udksa-my.sharepoint.com/:b:/g/personal/2210009122_iau_edu_sa/EfZnAhQyUJhNi_k71oFilhIBj63yzAp6TddztnS6yyYCKQ?e=G6Pz0ns"
+                                    target="_blank" class="btn btn--secondary">
+                                    <span>📄</span>
+                                    View Proposal
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card presentation-card final">
+                        <div class="card__body">
+                            <div class="presentation-header">
+                                <div class="presentation-icon">🎯</div>
+                                <h3>Final Presentation</h3>
+                                <div class="presentation-badge pending">Upcoming</div>
+                            </div>
+                            <div class="presentation-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Due Date:</span>
+                                    <span class="detail-value">November 25, 2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Required Duration:</span>
+                                    <span class="detail-value">15 Minutes</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Status:</span>
+                                    <div class="status status--warning">Pending Prep.</div>
+                                </div>
+                            </div>
+
+                            <div class="presentation-actions">
+                                <button class="btn btn--outline" disabled>
+                                    <span>⏱️</span>
+                                    Practice (Coming Week 9)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-timer enhanced-timer">
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="placeholder-content p-20">
+                                <div class="placeholder-icon">⏱️</div>
+                                <h3>Practice Timer Coming Soon</h3>
+                                <p>Presentation practice tools will be available closer to the submission dates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>👥 Project Team (Group B)</h2>
+                </div>
+
+                <div class="team-grid">
+                    <div class="card member-card">
+                        <img src="Abdullah-Ahmed.png" alt="Member 1"
+                            class="member-avatar">
+                        <div class="member-name">عبدالله أحمد</div>
+                        <div class="member-role">Team Lead & Computer Vision Specialist</div>
+                    </div>
+
+                    <div class="card member-card">
+                        <img src="https://via.placeholder.com/120/667eea/FFFFFF?text=K.F" alt="Member 2"
+                            class="member-avatar">
+                        <div class="member-name">رضا الحاجي</div>
+                        <div class="member-role">Data Analysis & Reporting Specialist</div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-32">
+                    <p class="text-muted">A dedicated team working on innovative traffic analysis solutions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
